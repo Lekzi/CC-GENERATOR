@@ -1,6 +1,23 @@
 import random
 import os
+import colorama
 import time as t
+from colorama import  Fore,Style
+G = Fore.GREEN
+B = Fore.WHITE
+G = Fore.GREEN
+C = Fore.CYAN
+G = Fore.GREEN
+M = Fore.MAGENTA
+W = Fore.WHITE
+try:
+	import colorama
+except ModuleNotFoundError:
+	print("Requests is not Installed")
+	os.system("pip install colorama")
+os.system("clear")
+print(Fore.RED+"""CC GENERATOR BY Lêkzï""")
+t.sleep(5)
 os.system("apt install figlet")
 os.system("clear")
 def loop():
@@ -111,7 +128,7 @@ def loop():
         mm = random.randrange(1, 12)
         yy = random.randrange(22, 25)
         print(yellow + """
-================CC Details below=====================
+====================CC Details below=================
         Card number: """, ccnumber, """
         CVV: """, cvv, """
         Expiry Date: MM:""", mm, """ YY:""",yy,  white)
@@ -192,14 +209,14 @@ def loop():
         loop()
     elif cc == "0":
         os.system("clear")
-        print(green + "Updating CC GENERATOR..." + white)
+        print(red + "Updating CC GENERATOR..." + white)
         t.sleep(5)
         os.system("""
         cd
         rm -f -r CC GENERATOR
         git clone https://github.com/Lekzi/CC GENERATOR
         clear""")
-        print(green + """
+        print(red + """
         Now type this
         cd $HOME
         cd CC GENERATOR
