@@ -213,14 +213,14 @@ def loop():
         t.sleep(5)
         os.system("""
         cd
-        rm -f -r CC GENERATOR
-        git clone https://github.com/Lekzi/CC GENERATOR
+        rm -f -r CC-GENERATOR
+        git clone https://github.com/Lekzi/CC-GENERATOR
         clear""")
         print(red + """
         Now type this
         cd $HOME
-        cd CC GENERATOR
-        python3 GENERATOR.py
+        cd CC-GENERATOR
+        python3 'CC-GENERATOR.py'
         """ + white)
         exit()
         
