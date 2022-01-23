@@ -7,7 +7,7 @@ $apt install figlet
 $apt install requests
 $apt install colorama
 $apt install git
-$git clone https://github.com/Lekzi/CC GENERATOR
-$cd CC GENERATOR
+$git clone https://github.com/Lekzi/CC-GENERATOR
+$cd CC-GENERATOR
 $ls
-$python3 CC GENERATOR.py
+$python3 'CC-GENERATOR.py'
